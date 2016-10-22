@@ -3,13 +3,13 @@
 one:
   uid: MyString
   name: MyString
-  session_id: 
+  session_id: 1
   job_title: MyString
   money_made: 
 
 two:
   uid: MyString
   name: MyString
-  session_id: 
+  session_id: 1
   job_title: MyString
   money_made: 
