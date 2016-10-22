@@ -5,7 +5,7 @@ class CreateIncomeLogs < ActiveRecord::Migration[5.0]
       t.string :name
       t.integer :session_id
       t.string :job_title
-      t.double :money_made
+      t.float :money_made
 
       t.timestamps
     end

@@ -5,11 +5,11 @@ one:
   name: MyString
   session_id: 1
   job_title: MyString
-  money_made: 
+  money_made: 1.5
 
 two:
   uid: MyString
   name: MyString
   session_id: 1
   job_title: MyString
-  money_made: 
+  money_made: 1.5
