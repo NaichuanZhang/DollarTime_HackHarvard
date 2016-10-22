@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Income Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uid</th>
+      <th>Name</th>
+      <th>Session</th>
+      <th>Job title</th>
+      <th>Money made</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @income_logs.each do |income_log| %>
+      <tr>
+        <td><%= income_log.uid %></td>
+        <td><%= income_log.name %></td>
+        <td><%= income_log.session_id %></td>
+        <td><%= income_log.job_title %></td>
+        <td><%= income_log.money_made %></td>
+        <td><%= link_to 'Show', income_log %></td>
+        <td><%= link_to 'Edit', edit_income_log_path(income_log) %></td>
+        <td><%= link_to 'Destroy', income_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Income Log', new_income_log_path %>
