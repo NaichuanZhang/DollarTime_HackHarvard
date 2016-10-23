@@ -1,0 +1,2 @@
+module IncomelogsHelper
+end

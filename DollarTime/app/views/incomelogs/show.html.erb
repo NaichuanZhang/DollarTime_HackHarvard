@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @incomelog.user_id %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @incomelog.job %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @incomelog.amount %>
+</p>
+
+<%= link_to 'Edit', edit_incomelog_path(@incomelog) %> |
+<%= link_to 'Back', incomelogs_path %>
