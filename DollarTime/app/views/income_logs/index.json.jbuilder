@@ -1,1 +1,0 @@
-json.array! @income_logs, partial: 'income_logs/income_log', as: :income_log

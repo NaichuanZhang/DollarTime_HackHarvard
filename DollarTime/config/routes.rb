@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :income_logs
   root 'greetings#hello'
-
+  get '/user', to: 'users#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #	get '/welcome'
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
